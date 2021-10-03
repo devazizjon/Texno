@@ -1,0 +1,54 @@
+.nav-wrapper{
+    padding:0 2rem;;
+    background: blue;
+}
+.card-image img{
+    width: 200px;
+    height: 300px;
+}
+.price{
+    font-size: 25px;
+}
+.car{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-big{
+    font-size: 40px;
+}
+.card-action.action{
+    display: flex;
+    align-items: center;
+    align-content: end;
+}
+
+.item h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: initial;
+}
+.item .info{
+    font-size: 20px;
+    font-style: unset;
+    font-family: initial;
+    line-height: 35px;
+    padding-bottom: 50px;
+} 
+.basket{
+    display: flex;
+    justify-content: center;
+}
+strong {
+    display: block;
+    margin-top: 31px;
+    font-weight: 500;
+}
+.car img{
+    width: 400px;
+    height: 400px;
+}
+.red{
+    margin-top: 10px;
+}

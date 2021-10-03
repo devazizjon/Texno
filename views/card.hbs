@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row basket">
+        <div class="col s10">
+                <h1>Shopping card page</h1>
+           <div id="card">
+        {{#if cars.length}}
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Count</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each cars}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{count}}</td>
+                    <td>
+                        <button class="btn btn-small js-remove" data-id="{{id}}">Delate</button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+            <strong>Price<span class="price">{{price}}</span></strong>
+        {{else}}
+        <p>Card is empty</p>
+        {{/if}}
+           </div>
+        </div>
+    </div>
+</div>

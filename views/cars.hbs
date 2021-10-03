@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h1>Hello </h1>
+      {{#if cars.length}}
+{{#each cars}}
+
+    <div class="col s4 ">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{img}}">
+        </div>
+        <div class="card-content">
+          <span class="card-title">{{title}}</span>
+          <p class="price">{{price}}</p>
+        </div>
+        <div class="card-action action">
+          {{!-- <a href="/cars/{{id}}"target="_blank"><i class="fas fa-eye">Show</i></a> --}}
+          <a href="/cars/{{id}}" ><i class="fas fa-eye">Show</i></a>
+          <a href="/cars/{{id}}/edit?allow=true" ><i class="fas fa-edit">Edit</i></a>
+          <form action="/card/add" method="POST">
+          <input type="hidden" value="{{id}}" name="id" />
+          <button class="btn btn-small">Buy</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  {{else}}
+  <p>Empty</p>
+  {{/if}}
+    </div>
+  </div>
+</div>
